@@ -10,6 +10,9 @@ interface LeakMemory extends Library{
 public class HelloLeak{
     public static void main(String[] args){
         LeakMemory leak_memory = LeakMemory.INSTANCE;
+        while (true)
+        {
         leak_memory.leak_memory();
-    }
+        }
+    }   
 }

@@ -1,0 +1,1 @@
+gcc -fPIC -shared -o libhello.dll hello.c
